@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <b><label for="username">Username:</label></b>
+                <input  type="text" placeholder="Ganesh" id="username" autocomplete="off" onkeyup="userna()" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error </small>
+            </div>
+            <div class="form-control">
+                <b><label for="username">Email</label></b>
+                <input type="email" placeholder="ganeshchinimilli4@gmail.com" autocomplete="off"id="email" onkeyup="emailvalidation() " />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error </small>
+            </div>
+            <div class="form-control">
+                <b><label for="username">Phone Number</label></b>
+                <input type="number" placeholder="10-digit ph number" id="phoneNumber"autocomplete="off" onkeyup="phnumber()" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error </small>
+            </div>
+
+            <b><label for="username">Gender</label></b>
+            <div class="aa">
+                <input name="a" type="radio" id="male" value="male" onchange="gender()">
+                  <label for="male">Male</label><br>
+                <input name="a" type="radio" id="female" onchange="gender()">
+                  <label for="female">Female</label>
+
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i><br>
+                <small>Error message</small>
+            </div>
+            <b><label for="username">Languages Known:</label></b>
+            <div class="aa" id="main">
+                <input type="checkbox" id="Telugu" Name="lang" onchange="language()">
+                  <label for="male">Telugu</label>
+                <input type="checkbox" id="hindhi" Name="lang" onchange="language()">
+                  <label for="c++">Hindhi</label>
+                <input type="checkbox" id="English" Name="lang" onchange="language()">
+                  <label for="python">English</label>
+                <input type="checkbox" id="malayalam" Name="lang" onchange="language()">
+                  <label for="Java">Malayalam</label>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i><br>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <b> <label for="username">Address</label></b>
+                <textarea name="address" rows="6" placeholder="Type Your Address" autocomplete="off" id="address"
+                    onkeyup=" ads()"></textarea>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <b><label for="username">Designation</label><br></b>
+                <select name="designation" id="designation" autocomplete="off" style="cursor:pointer" onchange="desig()" >
+
+                    <option value="student">Student</option>
+                    <option value="Faculty">Faculty</option>
+                    <option value="Employee">Employee</option>
+
+                </select>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="aa">
+                <b> <label for="username">Skills</label><br></b>
+                <select class="msel" name="designation" id="multi" onchange="mul()" multiple>
+
+                    <option value="c">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="python">Python</option>
+
+                </select>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button id="submit" onclick="Validate()">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
